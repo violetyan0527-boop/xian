@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天穹书阁</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="badge">Apple 风格 · 沉浸式阅读</p>
+        <h1>天穹书阁</h1>
+        <p class="subtitle">让小说像电影一样流动。丝滑的动效、温润的色彩、沉浸的光影。</p>
+      </div>
+      <div class="hero-actions">
+        <a class="primary" href="#reader">开始阅读</a>
+        <a class="ghost" href="admin.html">管理员入口</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="glass-panel" id="reader">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">最新上传</p>
+            <h2 id="novel-title">等待管理员上传</h2>
+          </div>
+          <div class="reader-actions">
+            <button class="chip" id="decrease">A-</button>
+            <button class="chip" id="increase">A+</button>
+            <button class="chip" id="toggle">夜间</button>
+          </div>
+        </div>
+        <div class="content" id="novel-content">
+          <p>请前往管理员入口上传 DOCX 文件，系统会自动解析并刷新内容。</p>
+        </div>
+      </section>
+
+      <section class="feature-grid">
+        <article>
+          <h3>自动识别</h3>
+          <p>后台上传 DOCX 文件后，前台自动更新，阅读无缝衔接。</p>
+        </article>
+        <article>
+          <h3>轻盈动效</h3>
+          <p>细腻的背景流光与玻璃质感，致敬苹果式的克制优雅。</p>
+        </article>
+        <article>
+          <h3>专注阅读</h3>
+          <p>字距与段落间距依据苹果排版美学优化。</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>管理员后台 | 天穹书阁</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+</head>
+<body class="admin-body">
+  <div class="app-shell">
+    <header class="hero admin-hero">
+      <div>
+        <p class="badge">管理员后台</p>
+        <h1>上传小说</h1>
+        <p class="subtitle">选择 DOCX 文件，系统自动解析为可读内容，并更新前台。</p>
+      </div>
+      <div class="hero-actions">
+        <a class="ghost" href="index.html">返回前台</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="glass-panel">
+        <form id="upload-form" class="upload-form">
+          <label class="file-card" for="docx">
+            <span>拖拽 DOCX 文件或点击选择</span>
+            <input type="file" id="docx" accept=".docx" />
+          </label>
+          <input type="text" id="title" placeholder="小说标题" />
+          <button class="primary" type="submit">解析并发布</button>
+        </form>
+        <div class="preview">
+          <p class="eyebrow">解析预览</p>
+          <div id="preview-content" class="content"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
