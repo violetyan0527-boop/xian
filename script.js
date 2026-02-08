@@ -2,8 +2,6 @@ const STORAGE_KEY = "xian_novel";
 
 const titleEl = document.getElementById("novel-title");
 const contentEl = document.getElementById("novel-content");
-const summaryEl = document.getElementById("novel-summary");
-const promoEl = document.getElementById("novel-promo");
 const increaseBtn = document.getElementById("increase");
 const decreaseBtn = document.getElementById("decrease");
 const toggleBtn = document.getElementById("toggle");
@@ -18,8 +16,6 @@ const renderNovel = () => {
   }
   const data = JSON.parse(stored);
   titleEl.textContent = data.title || "无标题";
-  summaryEl.textContent = data.summary || "暂无简介。";
-  promoEl.innerHTML = data.promo ? `<p>${data.promo}</p>` : "<p>暂无宣传文案。</p>";
   contentEl.innerHTML = data.html || "<p>暂无内容。</p>";
 };
 

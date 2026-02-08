@@ -160,22 +160,6 @@ h1 {
   margin-bottom: 18px;
 }
 
-.meta {
-  margin-top: 10px;
-  color: var(--subtle);
-  font-size: 0.95rem;
-  max-width: 520px;
-}
-
-.promo {
-  margin: 18px 0 20px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  background: rgba(59, 130, 246, 0.08);
-  color: inherit;
-  border: 1px solid rgba(59, 130, 246, 0.18);
-}
-
 .feature-grid {
   display: grid;
   gap: 20px;
@@ -226,20 +210,6 @@ h1 {
 .preview {
   border-top: 1px solid rgba(148, 163, 184, 0.3);
   padding-top: 20px;
-}
-
-.generated {
-  display: grid;
-  gap: 16px;
-  margin-top: 24px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(148, 163, 184, 0.3);
-}
-
-.summary {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: inherit;
 }
 
 .ambient {
